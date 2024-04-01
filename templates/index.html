@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odisha Utal Diwas</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .slide1 {
+         background-image: url("{{ url_for('static', filename='assets/jagannath_temple.jpg')}}");
+        }
+        .slide2 {
+        background-image: url("{{ url_for('static', filename='assets/konark.jpeg')}}");
+        }
+        .slide3 {
+        background-image: url("{{ url_for('static', filename='assets/lingaraj.jpg')}}");
+        }
+        .main {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("{{url_for('static', filename='assets/main-image.jpg')}}");
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <h1>Odisha Utkala Diwas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#History">History</a></li>
+                    <li><a href="#freedom-fighters">Photo Gallery</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- <br> -->
+    <div class="main" id="Home">
+        <div class="upper-images">
+        </div>
+        <div class="background">
+            <div class="transbox">
+                <h1>ପବିତ୍ର ଉତ୍କଳ ଦିବସ ଅବସରରେ ମୋର ସମସ୍ତ ଓଡ଼ିଶା ବାସୀଙ୍କୁ ଶୁଭେଚ୍ଛା ଓ ଶୁଭକାମନା | ଉତ୍କଳ ଦିବସରେ ସମସ୍ତଙ୍କୁ ସୁଖ,
+                    ସମୃଦ୍ଧି, ଓ ଶାନ୍ତି ପ୍ରାର୍ଥନା କରୁଛି |</h1>
+            </div>
+        </div>
+
+
+        <div class="wish">
+            <div class="logo">
+                <div class="wish-logo">
+                    <img src="{{ url_for('static', filename='assets/giet-logo1.png')}}" alt="GIET Logo">
+                </div>
+                <div class="wish-logo">
+                    <img src="{{url_for('static',filename='assets/pdcs-logo1.png')}}" alt="PDCS Logo">
+                </div>
+            </div>
+            <div class="wish-content">
+                <h2>PDCS club wishes you</h2>
+                <h1>HAPPY UTKAL DIBAS</h1>
+            </div>
+
+        </div>
+        <!-- <img src="./assets/main.jpg" alt="error"> -->
+
+    </div>
+    <div class="history" id="History">
+        <img src="{{url_for('static',filename='assets/main-image1.jpg')}}" alt="history_image">
+        <div class="content">
+            <h1>About Utkal Dibas:</h1>
+            <p>
+                The modern state of Odisha was established on 1 April 1936 at Kanika Palace, Cuttack, as a province in
+                India, and consists predominantly of Odia speakers. 1 April is therefore celebrated as Utkal Divas
+                (Odisha Day).
+            </p>
+            <h2>What is the History of Odisha?</h2>
+            <ul>
+                <li>The British had occupied the Northern Circars, comprising the southern coast of Odisha, as a result
+                    of the Second Carnatic War by 1760, and incorporated them into the Madras Presidency gradually.</li>
+                <li>In 1803, the British ousted the Marathas from the Puri-Cuttack region of Odisha during the Second
+                    Anglo-Maratha War. The northern and western districts of Odisha were incorporated into the Bengal
+                    Presidency.</li>
+                <li>In 1903, the Utkal Sammilani organisation was founded to demand the unification of Odia-speaking
+                    regions into one state.</li>
+                <li>On 1 April 1912, the Bihar and Orissa Province was formed, and on 1 April 1936, Bihar and Orissa
+                    were split into separate provinces.</li>
+                <li>The new province of Orissa came into existence on a linguistic basis during the British rule in
+                    India, with Sir John Austen Hubback as the first governor.</li>
+                <li>Following India's independence, on 15 August 1947, 27 princely states signed the document to join
+                    Orissa.</li>
+            </ul>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Our Freedom Fighters</h1>
+    <div class="freedom-fighters" id="freedom-fighters">
+        <div class=" box">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('{{ url_for('static', filename='assets/jayee-rajguru.jpg') }}')"></div>
+                <h3>ଜୟୀ ରାଜଗୁରୁ</h3>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class=" box">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('{{ url_for('static', filename='assets/Veer_Surendra_Sai.jpg') }}')"></div>
+                <h3>ବୀର ସୁରେନ୍ଦ୍ର ସାଏ</h3>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class=" box">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('{{ url_for('static', filename='assets/laxmanNaik.jpg') }}')"></div>
+                <h3>ଲକ୍ଷ୍ମଣ ନାୟକ</h3>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class=" box">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('{{ url_for('static', filename='assets/gopabandhu.jpg') }}')"></div>
+                <h3>ଗୋପବନ୍ଧୁ ଦାସ</h3>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class=" box">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('{{ url_for('static', filename='assets/madhusudan-das.jpg') }}')"></div>
+                <h3>ମଧୁସୂଦନ ଦାସ</h3>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class=" box">
+            <div class="box-content">
+                <div class="box-img" style="background-image: url('{{ url_for('static', filename='assets/Baji_rout.jpg') }}')"></div>
+                <h3>ବାଜି ରାଉତ</h3>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- photo gallary -->
+    <h1 style="text-align: center;">Photo Gallery</h1>
+    <div class="wrap" id="photo-gallary">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="slider">
+            <div class="slide slide1">
+                <div class="slide-content">
+                    <span>jagannath temple</span>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-content">
+                    <span>konark temple</span>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide-content">
+                    <span>lingaraj temple</span>
+                </div>
+            </div>
+        </div>
+        <div id="arrow-right" class="arrow"></div>
+    </div>
+    <!-- all chief-minister -->
+    <!-- footer section -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-form-container">
+                    <div class="contact-form">
+                        <h2>Send Feedback</h2>
+                        <form id="feedback-form">
+                            <div class="form-group">
+                                <input type="text" id="feedback-name" name="feedback-name" placeholder="Your Name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="feedback-email" name="feedback-email" placeholder="Your Email"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="feedback-contact" name="feedback-contact" placeholder="Contact no."
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="feedback-message" name="feedback-message" rows="2"
+                                    placeholder="Your Feedback" required></textarea>
+                            </div>
+                            <p>{{message}}</p>
+                            <button type="submit">Send Feedback</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <h2>About Us</h2>
+                    <p>Welcome to our website dedicated to Utkal Divas! As we celebrate the rich culture and heritage of Odisha, we are honored to share this special occasion with you. Our mission is to showcase the beauty and diversity of Odisha through our platform. From its vibrant traditions to its remarkable history, we aim to commemorate Utkal Divas with pride and reverence. Join us as we embark on a journey to celebrate the spirit of Odisha on this auspicious day!</p>
+                        <div class="links">
+                            <div class="link">
+                                <a href="http://www.linkedin.com/in/rajeshkumar-panda-a48265251"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+                            </div>
+                            <div class="link">
+                                <a href="https://github.com/mr-rajesh857"><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+                            </div>
+                            <div class="link">
+                                <a href="rajeshkumarpanda690@gmail.com"><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <p>&copy; Developed By Rajesh</p>
+    </footer>
+
+    <script>
+        let sliderImages = document.querySelectorAll(".slide"),
+            arrowLeft = document.querySelector("#arrow-left"),
+            arrowRight = document.querySelector("#arrow-right"),
+            current = 0;
+
+        // Clear all images
+        function reset() {
+            for (let i = 0; i < sliderImages.length; i++) {
+                sliderImages[i].style.display = "none";
+            }
+        }
+
+        // Init slider
+        function startSlide() {
+            reset();
+            sliderImages[0].style.display = "block";
+        }
+
+        // Show prev
+        function slideLeft() {
+            reset();
+            sliderImages[current - 1].style.display = "block";
+            current--;
+        }
+
+        // Show next
+        function slideRight() {
+            reset();
+            sliderImages[current + 1].style.display = "block";
+            current++;
+        }
+
+        // Left arrow click
+        arrowLeft.addEventListener("click", function () {
+            if (current === 0) {
+                current = sliderImages.length;
+            }
+            slideLeft();
+        });
+
+        // Right arrow click
+        arrowRight.addEventListener("click", function () {
+            if (current === sliderImages.length - 1) {
+                current = -1;
+            }
+            slideRight();
+        });
+
+        startSlide();
+
+    </script>
+
+    
+</body>
+
+</html>
